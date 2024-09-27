@@ -5,8 +5,6 @@
 // Imprime "El número es par" o "El número es impar" según corresponda.
 function verificarParidad(numero) {
     // Tu código aquí
-    const numero = 10
-
     if(numero % 2 === 0){                   // si el número es par su resto al dividir con 2 será 0
         console.log("El número es par.")
     }else{
@@ -19,8 +17,6 @@ function verificarParidad(numero) {
 // "Menor de edad" (menor a 18), "Adulto" (entre 18 y 65), o "Adulto mayor" (mayor a 65).
 function clasificarEdad(edad) {
     // Tu código aquí
-    let edad = 27
-
     if(edad < 18){
         console.log("Eres menor de edad.")
     }else if(edad >= 18 && edad <= 65){
@@ -34,8 +30,6 @@ function clasificarEdad(edad) {
 // Instrucción: Crea una función que reciba un número entero positivo y utilice un bucle `while` para imprimir todos los números desde ese número hasta 0.
 function cuentaRegresiva(numero) {
     // Tu código aquí
-    let numero = 2
-
     if(numero <= 0){                // para restringir la entrada a numero > 0
         console.warn("Debes ingresar un número entero positivo mayor a cero")
     }else {
@@ -52,7 +46,7 @@ function cuentaRegresiva(numero) {
 // Instrucción: Escribe una función que imprima "Estoy aprendiendo JavaScript" 5 veces utilizando un bucle `do-while`.
 function repetirMensaje() {
     // Tu código aquí
-    let n = 5
+    n = 5
 
     do {
         console.log("Estoy aprendiendo JavaScript")
@@ -64,8 +58,6 @@ function repetirMensaje() {
 // Instrucción: Escribe una función que reciba un número entero positivo y utilice un bucle `for` para imprimir todos los números pares entre 0 y ese número.
 function imprimirPares(numero) {
     // Tu código aquí
-    let numero = 10
-
     if(numero <= 0){                            // para restringir la entrada a numero > 0
         console.warn("Debes ingresar un número entero positivo mayor a cero")
     }else {
@@ -105,8 +97,6 @@ function saltarCinco() {
 // Instrucción: Escribe una función que reciba un número del 1 al 7 y devuelva el día de la semana correspondiente (1 es "Lunes", 2 es "Martes", ..., 7 es "Domingo"). Usa la estructura `switch`.
 function obtenerDiaSemana(dia) {
     // Tu código aquí
-    let dia = 7
-
     switch(dia){
         case 1:
             console.log("Es Lunes.");
@@ -138,9 +128,7 @@ function obtenerDiaSemana(dia) {
 // Ejercicio 9: Switch con múltiples casos
 // Instrucción: Escribe una función que reciba un carácter y devuelva si es una vocal. Utiliza un `switch` y agrupa los casos para las vocales (a, e, i, o, u).
 function esVocal(letra) {
-    // Tu código aquí
-    let letra = "a"
-    
+    // Tu código aquí   
     switch(letra){
         case "a":
         case "e":
@@ -159,7 +147,6 @@ function esVocal(letra) {
 // Instrucción: Escribe una función que reciba tres números y determine si todos son positivos, al menos uno es negativo, o todos son negativos. Usa operadores lógicos (`&&`, `||`).
 function evaluarNumeros(a, b, c) {
     // Tu código aquí
-    let a = 5, b = 6, c = -10
     let todosPositivos = a > 0 && b > 0 && c > 0
     let unoNegativo = a < 0 || b < 0 || c < 0
     let todosNegativos =  a < 0 && b < 0 && c < 0
@@ -173,6 +160,7 @@ function evaluarNumeros(a, b, c) {
     }    
 }
 
+//module.exports = 
 // Exportar todas las funciones
 export {
     verificarParidad,
@@ -186,3 +174,16 @@ export {
     esVocal,
     evaluarNumeros,
 };
+
+/*
+verificarParidad(15)
+clasificarEdad(27)
+cuentaRegresiva(3)
+repetirMensaje()
+imprimirPares(6)
+detenerEnSeis()
+saltarCinco()
+obtenerDiaSemana(7)
+esVocal("u")
+evaluarNumeros(5,6,-10)  
+*/
